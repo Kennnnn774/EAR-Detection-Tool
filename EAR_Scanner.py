@@ -146,7 +146,47 @@ class EAR_Scanner:
                 self.progress.append(1)
                 print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
 
+    def check_ear(self, url):
+        try:
+            response = requests.get(url, timeout=self.timeout, verify=False, allow_redirects=False)
+            result = {
+                'url': url,
+                'status_code': response.status_code,
+                'vulnerable': False,
+                'message': ''
+            }
+
+            if response.status_code == 302:
+                if 'Location' in response.headers:
+                    response_length = len(response.text)
+                    if response_length >= self.content_length:
+                        result['vulnerable'] = True
+                        result['message'] = f"Found 302 with Location header. Content length: {response_length}. Likely vulnerable."
+                    else:
+                        result['message'] = "Found 302 with Location header but content length is less than expected."
+                else:
+                    result['message'] = "302 status code found, but no Location header."
+            else:
+                result['message'] = "No redirect found. Not vulnerable."
+
+            return result
+
+        except Exception as e:
+            return {
+                'url': url,
+                'error': True,
+                'message': str(e)
+            }
+    
+def scan_single_url(url):
+    scanner = EAR_Scanner()
+    scanner.timeout = 60  # Set the desired timeout
+    scanner.content_length = 200  # Set the desired content length for vulnerability check
+    return scanner.check_ear(url)
+
 if __name__ == '__main__':
     test = EAR_Scanner()
     test.start()
+
+    ##########need to rewrite this part############
         
