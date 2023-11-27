@@ -11,10 +11,13 @@
         }
     },
     "permissions": [
-        "activeTab"
+        "tabs"
     ],
-    "host_permissions": [
-        "http://localhost:5000/"
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [ "<all_urls>" ]
+        }
     ],
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'"

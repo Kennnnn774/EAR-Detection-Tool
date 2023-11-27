@@ -26,7 +26,7 @@ class EAR_Scanner:
             }
 
             if response.status_code == 302: 
-                if 'Location' in response.headers: # this is the best way to check the length of the response
+                if 'Location' in response.headers: # this is the best way to check
                     response_length = len(response.text)
                     if response_length >= self.content_length: # a redirect is not very long
                         result['vulnerable'] = True
