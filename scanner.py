@@ -25,10 +25,10 @@ class EAR_Scanner:
                 'message': ''
             }
 
-            if response.status_code == 302:
-                if 'Location' in response.headers:
+            if response.status_code == 302: 
+                if 'Location' in response.headers: # this is the best way to check the length of the response
                     response_length = len(response.text)
-                    if response_length >= self.content_length:
+                    if response_length >= self.content_length: # a redirect is not very long
                         result['vulnerable'] = True
                         result['message'] = f"Found 302 with Location header. Content length: {response_length}. Likely vulnerable."
                     else:
