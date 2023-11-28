@@ -4,3 +4,4 @@ argparse
 pyfiglet
 gunicorn
 flask
+flask-cors
