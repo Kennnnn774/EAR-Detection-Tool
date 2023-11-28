@@ -113,38 +113,38 @@ class EAR_Scanner:
                 print(f'{Fore.GREEN}[+] Vulnerable URLs: {Fore.YELLOW}{self.arguments.output}{Style.RESET_ALL}')
                 print("="*85)       
 
-    def check_ear(self, url):
-        try:
-            response = requests.get(url, timeout=60, verify=False, allow_redirects=False)
-            # Step-1: Checking Whether Status Code is 302
-            status_code = response.status_code
-            if status_code == 302:
-                # Step-2: Checking Whether 'Location' Header is Present
-                if 'Location' in response.headers.keys():
-                    response_length = len(response.text)
-                    if response_length >= self.content_length:
-                        if self.arguments.url:
-                            print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}100% Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}') 
-                        self.vulnerable_urls.append(url)
-                    else:
-                        if self.arguments.url:
-                            print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}Might Be Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}')                    
-                        self.vulnerable_urls.append(url)
-            else:
-                if self.arguments.url:
-                    print(f'{Fore.YELLOW}[-] [{status_code}] {Fore.WHITE}{url}{Fore.YELLOW} ... not vulnerable!{Style.RESET_ALL}  ')
+    # def check_ear(self, url):
+    #     try:
+    #         response = requests.get(url, timeout=60, verify=False, allow_redirects=False)
+    #         # Step-1: Checking Whether Status Code is 302
+    #         status_code = response.status_code
+    #         if status_code == 302:
+    #             # Step-2: Checking Whether 'Location' Header is Present
+    #             if 'Location' in response.headers.keys():
+    #                 response_length = len(response.text)
+    #                 if response_length >= self.content_length:
+    #                     if self.arguments.url:
+    #                         print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}100% Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}') 
+    #                     self.vulnerable_urls.append(url)
+    #                 else:
+    #                     if self.arguments.url:
+    #                         print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}Might Be Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}')                    
+    #                     self.vulnerable_urls.append(url)
+    #         else:
+    #             if self.arguments.url:
+    #                 print(f'{Fore.YELLOW}[-] [{status_code}] {Fore.WHITE}{url}{Fore.YELLOW} ... not vulnerable!{Style.RESET_ALL}  ')
         
-            if self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
-                self.progress.append(1)
-                print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
-        except Exception as e:
-            if self.arguments.url:
-                print(f'{Fore.RED}[!] {Fore.YELLOW}[ERROR] : {e} {Fore.YELLOW}[{Fore.GREEN}{url}{Fore.YELLOW}]{Style.RESET_ALL}')
+    #         if self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
+    #             self.progress.append(1)
+    #             print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
+    #     except Exception as e:
+    #         if self.arguments.url:
+    #             print(f'{Fore.RED}[!] {Fore.YELLOW}[ERROR] : {e} {Fore.YELLOW}[{Fore.GREEN}{url}{Fore.YELLOW}]{Style.RESET_ALL}')
             
-            elif self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
-                self.errors.append(1)
-                self.progress.append(1)
-                print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
+    #         elif self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
+    #             self.errors.append(1)
+    #             self.progress.append(1)
+    #             print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
 
     def check_ear(self, url):
         try:
