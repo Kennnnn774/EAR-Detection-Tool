@@ -3,3 +3,4 @@ colorama
 argparse
 pyfiglet
 gunicorn
+flask
