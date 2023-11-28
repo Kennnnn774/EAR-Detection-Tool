@@ -19,6 +19,7 @@ headers = {
 
 
 # search for db records based on a given url
+# returns None if none found
 def search_for_url(url):
     dest = "https://us-east-2.aws.data.mongodb-api.com/app/data-kkxqh/endpoint/data/v1/action/findOne"
     payload = json.dumps({
@@ -32,9 +33,10 @@ def search_for_url(url):
 
     try:
         response = requests.request("POST", dest, headers=headers, data=payload)
-        print(response.text)
-    except:
-        print("An exception was raised while handling response for 'search_for_url'")
+        response = response.json()
+        return response['document']
+    except Exception as err:
+        print(err)
 
 # insert new results for a specified url
 def insert_new_document(url, result):
@@ -51,9 +53,10 @@ def insert_new_document(url, result):
     })
     try:
         response = requests.request("POST", dest, headers=headers, data=payload)
-        print(response.text)
-    except:
-        print("An exception was raised while handling response for 'insert_new_document'")
+        response = response.json()
+        return response
+    except Exception as err:
+        print(err)
 
-search_for_url("https://google.com")
-search_for_url("https://www.mongodb.com")
+print(search_for_url("https://google.com"))
+print(search_for_url("https://www.mongodb.com"))
