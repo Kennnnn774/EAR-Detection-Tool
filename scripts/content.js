@@ -1,12 +1,22 @@
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    // listen for messages sent from background.js
-    if (request.message === 'scan') {
-      // get response
-      // if found, then return result
-      // else conduct scan
-    }
-});
+// chrome.runtime.onMessage.addListener(
+//   async function(request, sender, sendResponse) {
+//     // listen for messages sent from background.js
+//     if (request.message === 'scan') {
+//       // get response
+//       let result = {
+//         vulnerable: false,
+//         message: 'This site is not vulnerable!'
+//       }
+//       // if found
+//       // else conduct scan
+
+//       // return result to the background script
+//       chrome.runtime.sendMessage(result);
+
+//       // store the result in local storage. so that the popup can display the result.
+//       chrome.storage.local.set(result);
+//     } 
+// });
 
 // document.getElementById('scanButton').addEventListener('click', function() {
 //   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
