@@ -33,8 +33,16 @@ def search_for_url(url):
 
     try:
         response = requests.request("POST", dest, headers=headers, data=payload)
+        status_code = response.status_code
         response = response.json()
-        return response['document']
+        response = response['document']
+
+        if response['result']:
+            # vulnerable
+            return {'vulnerable': response['result'], 'url': response['url'], 'dateChecked': response['dateChecked'], "message": 'Redirect found. Vulnerable.', "status_code": status_code}
+
+        else:
+            return {'vulnerable': response['result'], 'url': response['url'], 'dateChecked': response['dateChecked'], "message": 'No redirect found. Not vulnerable.', "status_code": status_code}
     except Exception as err:
         print(err)
 
@@ -57,6 +65,3 @@ def insert_new_document(url, result):
         return response
     except Exception as err:
         print(err)
-
-print(search_for_url("https://google.com"))
-print(search_for_url("https://www.mongodb.com"))
