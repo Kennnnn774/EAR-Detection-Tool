@@ -33,8 +33,8 @@ def search_for_url(url):
     try:
         response = requests.request("POST", dest, headers=headers, data=payload)
         print(response.text)
-    except E:
-        print(E)
+    except:
+        print("An exception was raised while handling response for 'search_for_url'")
 
 # insert new results for a specified url
 def insert_new_document(url, result):
@@ -52,8 +52,8 @@ def insert_new_document(url, result):
     try:
         response = requests.request("POST", dest, headers=headers, data=payload)
         print(response.text)
-    except E:
-        print(E)
+    except:
+        print("An exception was raised while handling response for 'insert_new_document'")
 
 search_for_url("https://google.com")
 search_for_url("https://www.mongodb.com")
