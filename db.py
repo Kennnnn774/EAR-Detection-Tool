@@ -6,9 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-x = datetime.datetime.now()
-print(x)
-
+# x = datetime.datetime.now()
+# print(x)
 # datetime.strptime() method to convert from string to datetime object
 # datetime.strftime() method to convert from object to string, with arguments to specify info needed
 
@@ -37,6 +36,7 @@ def search_for_url(url):
     except E:
         print(E)
 
+# insert new results for a specified url
 def insert_new_document(url, result):
     dest = "https://us-east-2.aws.data.mongodb-api.com/app/data-kkxqh/endpoint/data/v1/action/insertOne"
     payload = json.dumps({
