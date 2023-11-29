@@ -2,7 +2,6 @@ console.log("content script exists")
 
 chrome.runtime.onMessage.addListener(
   async function(request, sender, sendResponse) {
-    console.log("scan");
     if (request.message === 'scan') {
       // get response
       let result = {
@@ -12,7 +11,6 @@ chrome.runtime.onMessage.addListener(
 
       // return result to background script to process result
       chrome.runtime.sendMessage(result);
-      
     } 
 });
 
