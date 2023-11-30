@@ -20,7 +20,6 @@ class EAR_Scanner:
     def get_arguments(self):
         banner = pyfiglet.figlet_format("            EAR Scanner")
         print(banner+"\n")
-        parser = argparse.ArgumentParser(description=f'{Fore.RED}EAR Scanner v1.0 {Fore.YELLOW}[Author: {Fore.GREEN}Pushpender Singh{Fore.YELLOW}] [{Fore.GREEN}https://github.com/PushpenderIndia{Fore.YELLOW}]')
         parser._optionals.title = f"{Fore.GREEN}Optional Arguments{Fore.YELLOW}"
         parser.add_argument("-u", "--url", dest="url", help=f"{Fore.GREEN}Scan Single URL for EAR{Fore.YELLOW}")
         parser.add_argument("-uL", "--url-list", dest="file_containing_urls", help=f"{Fore.GREEN}Provide a File Containing URLs {Fore.YELLOW}[PRO_TIP: {Fore.GREEN}Fuzz ALL URLs using tools such as ffuf,gobuster,disbuter,etc & then pass urls_list.txt using this argument{Fore.YELLOW}] [NOTE: {Fore.RED}One URL in One Line{Fore.YELLOW}].")    
@@ -35,7 +34,6 @@ class EAR_Scanner:
 
     def start(self):
         self.arguments = self.get_arguments()
-        print(f"{Fore.YELLOW}           [Author: {Fore.GREEN}Pushpender Singh{Fore.YELLOW}] [{Fore.GREEN}https://github.com/PushpenderIndia{Fore.YELLOW}]\n\n{Style.RESET_ALL}")
         self.ThreadNumber         = int(self.arguments.ThreadNumber)
         self.timeout              = int(self.arguments.timeout)
         self.content_length       = int(self.arguments.ContentLength)
@@ -113,39 +111,6 @@ class EAR_Scanner:
                 print(f'{Fore.GREEN}[+] Vulnerable URLs: {Fore.YELLOW}{self.arguments.output}{Style.RESET_ALL}')
                 print("="*85)       
 
-    # def check_ear(self, url):
-    #     try:
-    #         response = requests.get(url, timeout=60, verify=False, allow_redirects=False)
-    #         # Step-1: Checking Whether Status Code is 302
-    #         status_code = response.status_code
-    #         if status_code == 302:
-    #             # Step-2: Checking Whether 'Location' Header is Present
-    #             if 'Location' in response.headers.keys():
-    #                 response_length = len(response.text)
-    #                 if response_length >= self.content_length:
-    #                     if self.arguments.url:
-    #                         print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}100% Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}') 
-    #                     self.vulnerable_urls.append(url)
-    #                 else:
-    #                     if self.arguments.url:
-    #                         print(f'{Fore.GREEN}[+] [302] {Fore.WHITE}{url} {Fore.YELLOW}[Location: {Fore.GREEN}{response.headers["Location"]}{Fore.WHITE}] {Fore.YELLOW}[Status: {Fore.GREEN}Might Be Vulnerable{Fore.YELLOW}]{Style.RESET_ALL}')                    
-    #                     self.vulnerable_urls.append(url)
-    #         else:
-    #             if self.arguments.url:
-    #                 print(f'{Fore.YELLOW}[-] [{status_code}] {Fore.WHITE}{url}{Fore.YELLOW} ... not vulnerable!{Style.RESET_ALL}  ')
-        
-    #         if self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
-    #             self.progress.append(1)
-    #             print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
-    #     except Exception as e:
-    #         if self.arguments.url:
-    #             print(f'{Fore.RED}[!] {Fore.YELLOW}[ERROR] : {e} {Fore.YELLOW}[{Fore.GREEN}{url}{Fore.YELLOW}]{Style.RESET_ALL}')
-            
-    #         elif self.arguments.file_containing_urls or self.arguments.fuzz_and_scan:
-    #             self.errors.append(1)
-    #             self.progress.append(1)
-    #             print(f'\r{Fore.YELLOW}[*] ProgressBar: {Fore.WHITE}{len(self.progress)}/{self.total} {Fore.YELLOW}[Errors: {Fore.RED}{len(self.errors)}{Fore.YELLOW}] [Vulnerable: {Fore.GREEN}{len(self.vulnerable_urls)}{Fore.YELLOW}] ... {Style.RESET_ALL}', end="")
-
     def check_ear(self, url):
         try:
             response = requests.get(url, timeout=self.timeout, verify=False, allow_redirects=False)
@@ -177,6 +142,20 @@ class EAR_Scanner:
                 'error': True,
                 'message': str(e)
             }
+            
+    def write_results_to_file(self, filename):
+        with open(filename, 'w') as f:
+            # First, write the vulnerable URLs
+            for vuln_url in self.vulnerable_urls:
+                f.write(f"[VULNERABLE] {vuln_url}\n")
+
+            # Then, write the rest of the URLs
+            for url in self.progress:
+                if url not in self.vulnerable_urls:
+                    f.write(f"[OK] {url}\n")
+
+            for error in self.errors:
+                f.write(f"[ERROR] {error}\n")
     
 def scan_single_url(url):
     scanner = EAR_Scanner()
