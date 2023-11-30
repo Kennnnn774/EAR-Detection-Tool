@@ -2,7 +2,7 @@ document.getElementById('scanButton').addEventListener('click', function() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         const currentTab = tabs[0];
         console.log("currentURL", currentTab.url);
-        fetch('http://localhost:5000/scan', {
+        fetch('https://ear-extension.onrender.com/scan', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -18,3 +18,4 @@ document.getElementById('scanButton').addEventListener('click', function() {
         });
     });
 });
+

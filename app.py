@@ -9,7 +9,7 @@ CORS(app)
 def EAR():
     return 'Hello, World!'
 
-@app.route('/scan', methods=['POST', "GET"])
+@app.route('/scan', methods=["GET"])
 def scan_url():
     url = request.json.get('url')
     result = scan_single_url(url)
