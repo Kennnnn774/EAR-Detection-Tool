@@ -1,7 +1,8 @@
-python-dotenv
 requests
 colorama
 argparse
 pyfiglet
 gunicorn
 flask
+flask-cors
+python-dotenv
