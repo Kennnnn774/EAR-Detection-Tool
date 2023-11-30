@@ -5,3 +5,4 @@ pyfiglet
 gunicorn
 flask
 flask-cors
+python-dotenv
