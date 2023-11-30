@@ -6,11 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# x = datetime.datetime.now()
-# print(x)
-# datetime.strptime() method to convert from string to datetime object
-# datetime.strftime() method to convert from object to string, with arguments to specify info needed
-
 headers = {
   'Content-Type': 'application/json',
   'Access-Control-Request-Headers': '*',
@@ -21,9 +16,9 @@ headers = {
 # search for db records based on a given url
 # returns None if none found
 def search_for_url(url):
-    dest = "https://us-east-2.aws.data.mongodb-api.com/app/data-kkxqh/endpoint/data/v1/action/findOne"
+    dest = os.getenv('DB_URL_API_BASE') + "findOne"
     payload = json.dumps({
-        "collection": "Web Security final",
+        "collection": "WSFinal",
         "database": "WSFinal",
         "dataSource": "WebSecurityFinal",
         "filter": {
@@ -36,27 +31,27 @@ def search_for_url(url):
         status_code = response.status_code
         response = response.json()
         response = response['document']
-
-        if response['result']:
-            # vulnerable
-            return {'vulnerable': response['result'], 'url': response['url'], 'dateChecked': response['dateChecked'], "message": 'Redirect found. Vulnerable.', "status_code": status_code}
-
-        else:
-            return {'vulnerable': response['result'], 'url': response['url'], 'dateChecked': response['dateChecked'], "message": 'No redirect found. Not vulnerable.', "status_code": status_code}
+        response['status_code'] = status_code
+        return response
     except Exception as err:
         print(err)
+        return {
+            "url": url,
+            "err": err
+        }
 
 # insert new results for a specified url
-def insert_new_document(url, result):
-    dest = "https://us-east-2.aws.data.mongodb-api.com/app/data-kkxqh/endpoint/data/v1/action/insertOne"
+def insert_new_document(url, result, message):
+    dest = os.getenv('DB_URL_API_BASE') + "insertOne"
     payload = json.dumps({
-        "collection": "Web Security final",
+        "collection": "WSFinal",
         "database": "WSFinal",
         "dataSource": "WebSecurityFinal",
         "document": {
             "url": url,
-            "result": result,
-            "dateChecked": datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+            "vulnerable": result,
+            "dateChecked": datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S"),
+            "message": message
         }
     })
     try:
@@ -65,3 +60,7 @@ def insert_new_document(url, result):
         return response
     except Exception as err:
         print(err)
+        return {
+            "url": url,
+            "err": err
+        }
