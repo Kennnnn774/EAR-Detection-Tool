@@ -62,5 +62,7 @@ def insert_new_document(url, result, message):
         print(err)
         return {
             "url": url,
+            "result": result,
+            "message": message
             "err": err
         }
