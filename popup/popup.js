@@ -1,4 +1,4 @@
-let relaxationGif = "https://media.giphy.com/media/C2L2bXRnv2chSO1mAH/giphy.gif";
+let relaxationGif = "https://media.giphy.com/media/j6aoUHK5YiJEc/giphy.gif";
 let potentialEarImg = "https://media.giphy.com/media/a5viI92PAF89q/giphy.gif";
 let noEarimg = "https://media.giphy.com/media/Od0QRnzwRBYmDU3eEO/giphy.gif";
 let foundEarimg = "https://media.giphy.com/media/lRv3gbfX68oMDDPuwv/giphy.gif";
