@@ -19,7 +19,7 @@ def scan_url():
     if exists:
         #if error is returned return that error
         if exists.get('err'):
-            return exists
+            return jsonify(exists)
 
         #if entry exists in database with this url, then check when it was last updated
         date = datetime.strptime(exists['dateChecked'], "%m/%d/%Y, %H:%M:%S")
@@ -35,6 +35,8 @@ def scan_url():
             if inserting.get('err'):
                 return jsonify(inserting)
             else:
+                result['dateChecked'] = inserting['dateChecked']
+                result['_id'] = inserting['insertedId']
                 return jsonify(result)
         else:
             return jsonify(exists)
@@ -47,6 +49,8 @@ def scan_url():
         if inserting.get('err'):
             return jsonify(inserting)
         else:
+            result['dateChecked'] = inserting['dateChecked']
+            result['_id'] = inserting['insertedId']
             return jsonify(result)
 
 if __name__ == "__main__":
