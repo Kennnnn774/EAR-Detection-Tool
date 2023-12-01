@@ -22,14 +22,19 @@ chrome.tabs.query({active: true, currentWindow: true}, async function(tabs) {
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if (request.url.length > 20) {
+    request.url = request.url.slice(0, 20) + "..."
+  }
+  request.dateChecked = request.dateChecked.split(",")[0]
+
   if (request.vulnerable) {
     result.innerText = "Vulnerable!";
-    desc.innerText = "The site \'" + request.url + "\' was last checked on \'" + request.dateChecked + "\' and found to be vulnerable! Report this issue to the site owners!";
+    desc.innerText = "The site \'" + request.url + "\' was last checked on " + request.dateChecked + " and found to be vulnerable! Report this issue to the site owners!";
     img.src = foundEarimg;
   } else {
     result.innerText = "All Clear!";
     img.src = noEarimg;
-    desc.innerText = "The site \'" + request.url + "\' was last checked on \'" + request.dateChecked + "\' and " + fullMsg(request);
+    desc.innerText = "The site \'" + request.url + "\' was last checked on " + request.dateChecked + " and " + fullMsg(request);
   }  
 });
 
