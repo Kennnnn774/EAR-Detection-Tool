@@ -1,9 +1,6 @@
-console.log("content script exists")
-
 chrome.runtime.onMessage.addListener(
   async function(request, sender, sendResponse) {
     if (request.message === 'scan') {
-      console.log("received response!")
       // get response
       let result = {
         _id: null,
