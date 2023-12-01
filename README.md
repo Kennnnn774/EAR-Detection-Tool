@@ -102,6 +102,7 @@ Don't forget to give the project a star! :star: Thanks again!
 We are thankful for these resources which have helped us on our development journey:
 
 * [Paper: Fear the EAR: Discovering and Mitigating Execution After Redirect Vulnerabilities](https://sites.cs.ucsb.edu/~chris/research/doc/ccs11_ear.pdf)
+* [gobuster tool](https://github.com/OJ/gobuster)
 
 
 # EAR-project
