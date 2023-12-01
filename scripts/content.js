@@ -3,35 +3,19 @@ console.log("content script exists")
 chrome.runtime.onMessage.addListener(
   async function(request, sender, sendResponse) {
     if (request.message === 'scan') {
+      console.log("received response!")
       // get response
       let result = {
-        vulnerable: true,
-        message: 'This site is not vulnerable!'
+        _id: null,
+        dateChecked: "date", 
+        message: "EAR detected",
+        status_code: 200, 
+        url: "url",
+        vulnerable: true
       }
 
-      // return result to background script to process result
+      // return result to requester
       chrome.runtime.sendMessage(result);
     } 
 });
 
-
-
-// document.getElementById('scanButton').addEventListener('click', function() {
-//   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-//       const currentTab = tabs[0];
-//       fetch('http://localhost:5000/scan', {
-//           method: 'POST',
-//           headers: {
-//               'Content-Type': 'application/json',
-//           },
-//           body: JSON.stringify({ url: currentTab.url }),
-//       })
-//       .then(response => response.json())
-//       .then(data => {
-//           document.getElementById('result').textContent = JSON.stringify(data);
-//       })
-//       .catch(error => {
-//           console.error('Error:', error);
-//       });
-//   });
-// });
