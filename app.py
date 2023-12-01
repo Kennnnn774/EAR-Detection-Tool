@@ -11,7 +11,7 @@ CORS(app)
 def EAR():
     return 'Hello, World!'
 
-@app.route('/scan', methods=["GET"])
+@app.route('/scan', methods=["POST"])
 def scan_url():
     url = request.json.get('url')
     exists = search_for_url(url)
