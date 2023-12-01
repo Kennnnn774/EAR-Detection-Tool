@@ -1,17 +1,19 @@
 from flask import Flask, request, jsonify
 from EAR_Scanner import scan_single_url  # Import your new function
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from db import search_for_url, insert_new_document
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
 CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
 def EAR():
     return 'Hello, World!'
 
 @app.route('/scan', methods=["POST"])
+@cross_origin()
 def scan_url():
     url = request.json.get('url')
     exists = search_for_url(url)

@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener(
   async function(request, sender, sendResponse) {
     if (request.message === 'scan') {
-      fetch(`https://ear-extension-backend.onrender.com/scan/`, {
+      fetch(`https://ear-extension-backend.onrender.com/scan`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
