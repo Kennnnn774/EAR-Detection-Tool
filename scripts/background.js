@@ -5,6 +5,10 @@ chrome.tabs.onActivated.addListener(async function(activeInfo) {
       message: "scan",
       url: tab.url
     })
+  } else {
+    chrome.action.setBadgeText({
+      text: "",
+    });
   }
 })
 
@@ -18,7 +22,11 @@ chrome.tabs.onUpdated.addListener(
           url: tab.url
         })
       }
-    }
+    } else {
+      chrome.action.setBadgeText({
+        text: "",
+      });
+    } 
   }
 );
 
