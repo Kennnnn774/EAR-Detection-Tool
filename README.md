@@ -47,6 +47,7 @@ Here are major frameworks/libraries we used to build our project.
 
 ## Getting Started
 ### Chrome Extension
+![extension](https://i.imgur.com/RGRbjQb.png)
 1. Git clone and repo and navigate to the folder
 
 ```bash
