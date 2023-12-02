@@ -1,0 +1,11 @@
+url,status_code,vulnerable,message
+https://www.blogspot.com,302,True,Found 302 with Location header. Content length: 205. Likely vulnerable.
+https://www.reddit.com,302,True,Found 302 with Location header. Content length: 413. Likely vulnerable.
+https://www.europa.eu,302,True,Found 302 with Location header. Content length: 683. Likely vulnerable.
+https://www.weibo.com,302,True,Found 302 with Location header. Content length: 427. Likely vulnerable.
+https://www.taobao.com,302,True,Found 302 with Location header. Content length: 242. Likely vulnerable.
+https://www.appspot.com,302,True,Found 302 with Location header. Content length: 239. Likely vulnerable.
+https://www.fedex.com,302,True,Found 302 with Location header. Content length: 233. Likely vulnerable.
+https://www.ameblo.jp,302,True,Found 302 with Location header. Content length: 230. Likely vulnerable.
+https://www.globalsign.com,302,True,Found 302 with Location header. Content length: 214. Likely vulnerable.
+https://www.synology.com,302,True,Found 302 with Location header. Content length: 382. Likely vulnerable.
