@@ -1,0 +1,3 @@
+url,status_code,vulnerable,message
+https://www.blogspot.com,302,True,Found 302 with Location header. Content length: 205. Likely vulnerable.
+https://www.reddit.com,302,True,Found 302 with Location header. Content length: 413. Likely vulnerable.
