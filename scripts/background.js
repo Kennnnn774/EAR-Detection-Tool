@@ -1,20 +1,10 @@
 chrome.tabs.onActivated.addListener(async function(activeInfo) {
   let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
   if (tab) {
-    chrome.action.setBadgeText({
-      text: "...",
-    });
-    
     chrome.tabs.sendMessage(tab.id, {
       message: "scan",
       url: tab.url
-    }, function(response) {
-      var lastError = chrome.runtime.lastError;
-      if (lastError) {
-        chrome.action.setBadgeText({
-          text: ""
-        });
-    }})
+    })
   }
 })
 
@@ -23,20 +13,10 @@ chrome.tabs.onUpdated.addListener(
     if (changeInfo.status == "complete") {
       let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
       if (tab) {
-        chrome.action.setBadgeText({
-          text: "...",
-        });
-        
         chrome.tabs.sendMessage(tab.id, {
           message: "scan",
           url: tab.url
-        }, function(response) {
-          var lastError = chrome.runtime.lastError;
-          if (lastError) {
-            chrome.action.setBadgeText({
-              text: ""
-            });
-        }})
+        })
       }
     }
   }
