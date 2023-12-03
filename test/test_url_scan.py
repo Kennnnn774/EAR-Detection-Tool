@@ -51,7 +51,7 @@ class EAR_Scanner:
         for url in data_list:
             if url != '\n':
                 url = url.strip()  # Remove whitespace characters
-                if not url.startswith('https://www.')
+                if not url.startswith('https://www.'):
                     if url.startswith('www.'):
                         url = 'https://' + url  # Prepend the scheme and www to the URL
                     else:
