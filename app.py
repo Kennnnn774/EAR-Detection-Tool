@@ -36,7 +36,7 @@ def scan_url():
             #if error is returned, return that error
             if inserting.get('err'):
                 return jsonify(inserting)
-            else:
+            elif inserting.get('insertedId') or inserting.get('matchedCount'):
                 result['dateChecked'] = inserting['dateChecked']
                 result['_id'] = inserting['insertedId']
                 return jsonify(result)

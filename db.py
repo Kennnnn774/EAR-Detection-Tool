@@ -45,7 +45,7 @@ def search_for_url(url):
 def insert_new_document(url, result, message):
     dest = os.getenv('DB_URL_API_BASE') + "insertOne"
     dateChecked = datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
-    
+
     try:
         payload = json.dumps({
             "collection": "WSFinal",
@@ -58,9 +58,32 @@ def insert_new_document(url, result, message):
                 "message": message
             }
         })
+        find = search_for_url(url)
+
+        if find:
+            dest = os.getenv('DB_URL_API_BASE') + "updateOne"
+            payload = json.dumps({
+                "collection": "WSFinal",
+                "database": "WSFinal",
+                "dataSource": "WebSecurityFinal",
+                "filter": {
+                    "_id": {"$oid": find['_id']}
+                }, 
+                "update": {
+                    "$set": {
+                        "vulnerable": result,
+                        "dateChecked": dateChecked,
+                        "message": message
+                    }
+                }
+            })
+        
         response = requests.request("POST", dest, headers=headers, data=payload)
         response = response.json()
         response['dateChecked'] = dateChecked
+
+        if find:
+            response['insertedId'] = find['_id']
         return response
     except Exception as err:
         print(err)
