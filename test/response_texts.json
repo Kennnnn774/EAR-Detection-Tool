@@ -1,0 +1,202 @@
+[
+    {
+        "URL": "https://www.blogspot.com",
+        "Response Text": "<HTML>\n<HEAD>\n<TITLE>Moved Temporarily</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\">\n<H1>Moved Temporarily</H1>\nThe document has moved <A HREF=\"https://www.blogger.com\">here</A>.\n</BODY>\n</HTML>\n"
+    },
+    {
+        "URL": "https://www.reddit.com",
+        "Response Text": "\n    <!DOCTYPE html>\n    <html lang=\"en-US\" class=\"theme-beta\">\n      <head prefix=\"og: https://ogp.me/ns#\">\n        <title>Reddit - Dive into anything</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">\n        <meta name=\"msapplication-navbutton-color\" content=\"#000000\">\n        <meta name=\"theme-color\" content=\"#000000\">\n        \n        \n              <meta name=\"description\" content=\"Reddit is a network of communities where people can dive into their interests, hobbies and passions. There&#39;s a community for whatever you&#39;re interested in on Reddit.\" /> <meta property=\"og:image\" content=\"https://www.redditstatic.com/shreddit/assets/favicon/192x192.png\" /><meta property=\"og:image:width\" content=\"256\" /><meta property=\"og:image:height\" content=\"256\" /><meta property=\"og:site_name\" conten"
+    },
+    {
+        "URL": "https://www.europa.eu",
+        "Response Text": "<HTML><HEAD>\r\n<TITLE>Redirect</TITLE>\r\n</HEAD>\r\n<BODY>\r\n<FONT face=\"Helvetica\">\r\n<big><strong></strong></big><BR>\r\n</FONT>\r\n<blockquote>\r\n<TABLE border=0 cellPadding=1 width=\"80%\">\r\n<TR><TD>\r\n<FONT face=\"Helvetica\">\r\n<big>Redirect (policy_request_redirect)</big>\r\n<BR>\r\n<BR>\r\n</FONT>\r\n</TD></TR>\r\n<TR><TD>\r\n<FONT face=\"Helvetica\">\r\nClick <a href=\"https:&#x2F;&#x2F;europa.eu&#x2F;\">here</a> if you are not automatically redirected.\r\n</FONT>\r\n</TD></TR>\r\n<TR><TD>\r\n<FONT face=\"Helvetica\">\r\n\r\n</FONT>\r\n</TD></TR>\r\n<TR><TD>\r\n<FONT face=\"Helvetica\" SIZE=2>\r\n<BR>\r\nFor assistance, contact your network support team.\r\n</FONT>\r\n</TD></TR>\r\n</TABLE>\r\n</blockquote>\r\n</FONT>\r\n</BODY></HTML>\r\n"
+    },
+    {
+        "URL": "https://www.weibo.com",
+        "Response Text": "Redirecting to <a href=\"https://passport.weibo.com/visitor/visitor?entry=miniblog&amp;a=enter&amp;url=https%3A%2F%2Fwww.weibo.com%2F&amp;domain=weibo.com&amp;ua=python-requests%2F2.22.0&amp;_rand=1701569877034&amp;sudaref=\">https://passport.weibo.com/visitor/visitor?entry=miniblog&amp;a=enter&amp;url=https%3A%2F%2Fwww.weibo.com%2F&amp;domain=weibo.com&amp;ua=python-requests%2F2.22.0&amp;_rand=1701569877034&amp;sudaref=</a>."
+    },
+    {
+        "URL": "https://www.taobao.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<h1>302 Found</h1>\r\n<p>The requested resource resides temporarily under a different URI.</p>\r\n<hr/>Powered by Tengine</body>\r\n</html>\r\n"
+    },
+    {
+        "URL": "https://www.appspot.com",
+        "Response Text": "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302 Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"https://console.cloud.google.com/appengine\">here</A>.\r\n</BODY></HTML>\r\n"
+    },
+    {
+        "URL": "https://www.fedex.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.fedex.com/global/choose-location.html\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.ameblo.jp",
+        "Response Text": "\n\n  <!DOCTYPE HTML PUBLIC '-//IETF//DTD HTML 2.0//EN'>\n  <html><head>\n  <title>302 Found</title>\n  </head><body>\n  <h1>Moved Permanently</h1>\n  <p>The document has moved <a href=https://ameblo.jp>here</a>.</p>\n  </body></html>\n\n  "
+    },
+    {
+        "URL": "https://www.globalsign.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.globalsign.com/en/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.synology.com",
+        "Response Text": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://www.synology.com/en-global'\" />\n\n        <title>Redirecting to https://www.synology.com/en-global</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://www.synology.com/en-global\">https://www.synology.com/en-global</a>.\n    </body>\n</html>"
+    },
+    {
+        "URL": "https://www.cxense.com",
+        "Response Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Piano &bull;Analytics + Activation</title>\n\n      <meta name=\"twitter:card\" content=\"summary_large_image\" />\n    <meta name=\"twitter:site\" content=\"@piano_io\" />\n    <meta name=\"twitter:domain\" content=\"Piano.io\" />\n    <meta name=\"twitter:description\" content=\"Analytics + Activation\" />\n    <meta name=\"twitter:title\" content=\"Piano &bull;Analytics + Activation\" />\n    <meta property=\"fb:admins\" content=\"https://www.facebook.com/piano.io/\" />\n    <meta property=\"og:site_name\" content=\"Piano.io\" />\n    <meta property=\"og:description\" content=\"Analytics + Activation\" />\n    <meta property=\"og:url\" content=\"https://piano.io/\" />\n    <meta property=\"og:type\" content=\"article\" />\n    <meta property=\"og:title\" content=\"Piano &bull;Analytics + Activation\" />\n    <meta name=\"description\" content=\"Analytics + Activation\" />\n    <meta name=\"title\" conte"
+    },
+    {
+        "URL": "https://www.dmm.co.jp",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.dmm.co.jp/top/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.pvp.net",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://na.leagueoflegends.com/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.xinhuanet.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr/>Powered by Byte-nginx<hr><center>tengine</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+        "URL": "https://www.xvideos2.com",
+        "Response Text": "<html>\n<head>\n<title>Redirection ...</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta http-equiv=\"refresh\" content=\"1; url = https://www.xvideos.com/\" />\n</head>\n<body>\n<h2>www.xvideos.com redirection</h2>\nPlease find your content on <a href=\"https://www.xvideos.com/\">https://www.xvideos.com/</a>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f85138e82643b3\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"b11cfdc7ce314e0b97eb2142421905d5\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.xnxx.tv",
+        "Response Text": "<html>\n\t\t<head>\n\t\t\t<title>Redirection ...</title>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t\t<meta http-equiv = \"refresh\" content = \"1; url = https://www.xnxx.com/\" />\n\t\t</head>\n\t\t<body>\n\t\t<h2>www.xnxx.com redirection</h2>\n\t\tPlease find your content on <a href='https://www.xnxx.com/'>https://www.xnxx.com/</a>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.xnxx2.com",
+        "Response Text": "<html>\n\t\t<head>\n\t\t\t<title>Redirection ...</title>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t\t<meta http-equiv = \"refresh\" content = \"1; url = https://www.xnxx.com/\" />\n\t\t</head>\n\t\t<body>\n\t\t<h2>www.xnxx.com redirection</h2>\n\t\tPlease find your content on <a href='https://www.xnxx.com/'>https://www.xnxx.com/</a>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.ptt.cc",
+        "Response Text": "<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx</center>\r\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f8513d2e3c43cf\",\"version\":\"2023.10.0\",\"r\":1,\"token\":\"515615eb5fab4c9b91a11e9bf529e6cf\",\"b\":1}' crossorigin=\"anonymous\"></script>\n</body>\r\n</html>\r\n"
+    },
+    {
+        "URL": "https://www.granbluefantasy.jp",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://granbluefantasy.jp/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.xvideos3.com",
+        "Response Text": "<html>\n<head>\n<title>Redirection ...</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta http-equiv=\"refresh\" content=\"1; url = https://www.xvideos.com/\" />\n</head>\n<body>\n<h2>www.xvideos.com redirection</h2>\nPlease find your content on <a href=\"https://www.xvideos.com/\">https://www.xvideos.com/</a>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f851449f7e42d5\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"b11cfdc7ce314e0b97eb2142421905d5\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.xnxx3.com",
+        "Response Text": "<html>\n\t\t<head>\n\t\t\t<title>Redirection ...</title>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t\t<meta http-equiv = \"refresh\" content = \"1; url = https://www.xnxx.com/\" />\n\t\t</head>\n\t\t<body>\n\t\t<h2>www.xnxx.com redirection</h2>\n\t\tPlease find your content on <a href='https://www.xnxx.com/'>https://www.xnxx.com/</a>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.550909.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"http://550909.com/?ad=www.550909.com\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.xvideos5.com",
+        "Response Text": "<html>\n<head>\n<title>Redirection ...</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta http-equiv=\"refresh\" content=\"1; url = https://www.xvideos.com/\" />\n</head>\n<body>\n<h2>www.xvideos.com redirection</h2>\nPlease find your content on <a href=\"https://www.xvideos.com/\">https://www.xvideos.com/</a>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f8514cdc574308\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"b11cfdc7ce314e0b97eb2142421905d5\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.xnxx115.com",
+        "Response Text": "<html>\n\t\t<head>\n\t\t\t<title>Redirection ...</title>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t\t<meta http-equiv = \"refresh\" content = \"1; url = https://www.xnxx.com/\" />\n\t\t</head>\n\t\t<body>\n\t\t<h2>www.xnxx.com redirection</h2>\n\t\tPlease find your content on <a href='https://www.xnxx.com/'>https://www.xnxx.com/</a>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.xvideos4.com",
+        "Response Text": "<html>\n<head>\n<title>Redirection ...</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta http-equiv=\"refresh\" content=\"1; url = https://www.xvideos.com/\" />\n</head>\n<body>\n<h2>www.xvideos.com redirection</h2>\nPlease find your content on <a href=\"https://www.xvideos.com/\">https://www.xvideos.com/</a>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f85150adf619db\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"b11cfdc7ce314e0b97eb2142421905d5\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.hackerdoslot.com",
+        "Response Text": "<html lang=\"pt-BR\">\n<head>\n<base href=\"https://hackerdoslot.com/\">\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"description\" content=\"Hacker do Slot\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"author\" content=\"Revoltz - Telegram: @xrevoltz\">\n<meta property=\"og:title\" content=\"Hacker do Slot\" />\n<meta name=\"description\" content=\"Hacker do Slot\" />\n<meta property=\"og:description\" content=\"Hacker do Slot\" />\n<meta property=\"og:image\" content=\"https://hackerdoslot.com/app/img/main.jpg\" />\n<meta property=\"og:url\" content=\"https://hackerdoslot.com/\" />\n<title>Hacker do Slot</title>\n<link rel=\"icon\" type=\"image/x-icon\" href=\"app/img/favicon.ico\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"app/css/bootstrap.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"app/css/styles2.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"app/plugins/line-awesome/css/line-awesome.css\">  \n<link rel=\"stylesheet\" type=\"text/css\" href=\"app"
+    },
+    {
+        "URL": "https://www.xvideos53.com",
+        "Response Text": "<html>\n<head>\n<title>Redirection ...</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta http-equiv=\"refresh\" content=\"1; url = https://www.xvideos.com/\" />\n</head>\n<body>\n<h2>www.xvideos.com redirection</h2>\nPlease find your content on <a href=\"https://www.xvideos.com/\">https://www.xvideos.com/</a>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f851566bcf4408\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"b11cfdc7ce314e0b97eb2142421905d5\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+    },
+    {
+        "URL": "https://www.smi2.net",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"http://smi2.net/\">here</a>.</p>\n<hr>\n<address>Apache/2.4.18 (Ubuntu) Server at www.smi2.net Port 80</address>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.bund.de",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://verwaltung.bund.de/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.adsmoloco.com",
+        "Response Text": "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302 Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"https://www.molocoads.com\">here</A>.\r\n</BODY></HTML>\r\n"
+    },
+    {
+        "URL": "https://www.duke.edu",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://duke.edu/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.accenture.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.accenture.com/us-en/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.espncdn.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"http://www.espn.com/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.ey.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.ey.com/en_us\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.system-monitor.com",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.system-monitor.com/dashboard/\">here</a>.</p>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"82f85162ec544295\",\"b\":1,\"version\":\"2023.10.0\",\"token\":\"ac5b0a754e134fa58ee43aa3d1f0b682\"}' crossorigin=\"anonymous\"></script>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.blogspot.co.uk",
+        "Response Text": "<HTML>\n<HEAD>\n<TITLE>Moved Temporarily</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\">\n<H1>Moved Temporarily</H1>\nThe document has moved <A HREF=\"https://www.blogspot.com/\">here</A>.\n</BODY>\n</HTML>\n"
+    },
+    {
+        "URL": "https://www.iinet.net.au",
+        "Response Text": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url=/home\" />\n\n        <title>Redirecting to /home</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"/home\">/home</a>.\n    </body>\n</html><!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# \">\n  <head>\n    <meta charset=\"utf-8\" />\n<meta name=\"title\" content=\"Australia&#039;s Speedy Internet &amp; Mobile Services | iiNet\" />\n<link rel=\"shortlink\" href=\"https://www.iinet.net.au/\" />\n<link rel=\"canonical\" href=\"https://www.iinet.net.au/home\" />\n<meta name=\"description\" content=\"iiNet is a leading Australian ISP"
+    },
+    {
+        "URL": "https://www.ilo.org",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.ilo.org/global/lang--en/index.htm\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.qnap.com",
+        "Response Text": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://www.qnap.com/en-us'\" />\n\n        <title>Redirecting to https://www.qnap.com/en-us</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://www.qnap.com/en-us\">https://www.qnap.com/en-us</a>.\n    </body>\n</html>"
+    },
+    {
+        "URL": "https://www.cengage.com",
+        "Response Text": "\n\n\n\n<!doctype html>\n<html class=\"mod_no-js\" lang=\"en\" ng-app=\"app\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>The Leading Provider of Higher Education Course Materials \u2013 Cengage</title>\n<link hreflang=\"x-default\" rel=\"alternate\" href=\"https://www.cengage.com/\"/>\n<link hreflang=\"en-us\" rel=\"alternate\" href=\"https://www.cengage.com/\"/>\n<link hreflang=\"en-au\" rel=\"alternate\" href=\"https://au.cengage.com/\"/>\n<link hreflang=\"en-nz\" rel=\"alternate\" href=\"https://nz.cengage.com/\"/>\n<link hreflang=\"en-gb\" rel=\"alternate\" href=\"https://www.cengage.uk/\"/>\n<link hreflang=\"en-ca\" rel=\"alternate\" href=\"https://www.cengage.ca/\"/>\n<script>\n//<![CDATA[\n\n        window.components = window.components || {};\n        window.components.seo = {\n            cafeCategory: 'Home Page'\n        }\n    \n//]]>\n</script>\n<meta name=\"description\" content=\"Cengage helps higher education instructors, learners and institutions thrive with course mat"
+    },
+    {
+        "URL": "https://www.blogspot.com.br",
+        "Response Text": "<HTML>\n<HEAD>\n<TITLE>Moved Temporarily</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\">\n<H1>Moved Temporarily</H1>\nThe document has moved <A HREF=\"https://www.blogspot.com/\">here</A>.\n</BODY>\n</HTML>\n"
+    },
+    {
+        "URL": "https://www.news.cn",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr/>Powered by Byte-nginx<hr><center>tengine</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+        "URL": "https://www.skynet.be",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www.proximus.be/pickx\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.cpanel.com",
+        "Response Text": "<!DOCTYPE html>\n<html style=\"height:100%\">\n<head>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n<title> 302 Found\r\n</title></head>\n<body style=\"color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;\">\n<div style=\"height:auto; min-height:100%; \"> <div style=\"text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;\">\n<h1 style=\"margin:0; font-size:150px; line-height:150px; font-weight:bold;\">302</h1>\n<h2 style=\"margin-top:20px;font-size: 30px;\">Found\n</h2>\n<p>The document has been temporarily moved.</p>\n</div></div></body></html>\n"
+    },
+    {
+        "URL": "https://www.blogspot.de",
+        "Response Text": "<HTML>\n<HEAD>\n<TITLE>Moved Temporarily</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\">\n<H1>Moved Temporarily</H1>\nThe document has moved <A HREF=\"https://www.blogspot.com/\">here</A>.\n</BODY>\n</HTML>\n"
+    },
+    {
+        "URL": "https://www.telenet.be",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://www2.telenet.be/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.mediaset.it",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://mediasetinfinity.mediaset.it/\">here</a>.</p>\n</body></html>\n"
+    },
+    {
+        "URL": "https://www.blogspot.ca",
+        "Response Text": "<HTML>\n<HEAD>\n<TITLE>Moved Temporarily</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\">\n<H1>Moved Temporarily</H1>\nThe document has moved <A HREF=\"https://www.blogspot.com/\">here</A>.\n</BODY>\n</HTML>\n"
+    },
+    {
+        "URL": "https://www.proof-dns.com",
+        "Response Text": "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302 Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"https://dns.google/\">here</A>.\r\n</BODY></HTML>\r\n"
+    },
+    {
+        "URL": "https://www.mainichi.jp",
+        "Response Text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"https://mainichi.jp/\">here</a>.</p>\n</body></html>\n"
+    }
+]
