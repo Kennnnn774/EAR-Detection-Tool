@@ -61,6 +61,7 @@ cd EAR-Detection-Tool
 pip install -r requirements.txt
 ```
 Additionally, create a .env file with a 'DB_API_KEY' and 'DB_URL_API_BASE' as keys, with an api key and base url from MongoDB Atlas.
+
 ![image](https://github.com/Kennnnn774/EAR-Detection-Tool/assets/76461173/02f89fa3-4c14-48f8-ae2e-c611187168a3)
 
 Finally, change the url in 'scripts/content.js' on line 4 to the localhost url. 
