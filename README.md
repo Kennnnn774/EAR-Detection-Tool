@@ -42,6 +42,7 @@ EAR Scanner Tools is a set of security tools designed to detect Excessive Access
 
 Here are major frameworks/libraries we used to build our project.
 * [Python](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 * [MongoDB](https://www.mongodb.com/)
 * [gobuster](https://github.com/OJ/gobuster)
 
@@ -55,10 +56,14 @@ git clone https://github.com/Kennnnn774/EAR-Detection-Tool.git
 cd EAR-Detection-Tool
 ```
 
-2. Install the required Python packages
+2. OPTIONAL: To run locally, install the required Python packages
 ```sh
 pip install -r requirements.txt
 ```
+Additionally, create a .env file with a 'DB_API_KEY' and 'DB_URL_API_BASE' as keys, with an api key and base url from MongoDB Atlas.
+![image](https://github.com/Kennnnn774/EAR-Detection-Tool/assets/76461173/02f89fa3-4c14-48f8-ae2e-c611187168a3)
+
+Finally, change the url in 'scripts/content.js' on line 4 to the localhost url. 
 
 3. Load the Chrome extension into your browser
     - Navigate to chrome://extensions/
@@ -67,13 +72,17 @@ pip install -r requirements.txt
 
 ### Fuzz Scan Tool 
 ![fuzzscantool](https://i.imgur.com/boqVmIL.png)
-1. navigate to the `fuzz_scan_tool`folder after following the previous two step
+1. After cloning the repository, install the required Python packages
+```sh
+pip install -r requirements.txt
+```
+2. navigate to the `fuzz_scan_tool`folder after following the previous two steps
 
 ```bash
 cd fuzz_scan_tool
 ```
 
-2. Run the fuzz scanner tool:
+3. Run the fuzz scanner tool:
 ```bash
 python fuzz_scan.py
 ```
