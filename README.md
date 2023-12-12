@@ -56,15 +56,15 @@ git clone https://github.com/Kennnnn774/EAR-Detection-Tool.git
 cd EAR-Detection-Tool
 ```
 
-2. OPTIONAL: To run locally, install the required Python packages
+2. OPTIONAL: To run locally, install the required Python packages. ONLY DO THIS if you are running this locally rather than with the hosted service- typically would just be for testing.
 ```sh
 pip install -r requirements.txt
 ```
-Additionally, create a .env file with a 'DB_API_KEY' and 'DB_URL_API_BASE' as keys, with an api key and base url from MongoDB Atlas.
+Additionally, create a .env file with a 'DB_API_KEY' and 'DB_URL_API_BASE' as keys, with an api key and base url from MongoDB Atlas. ONLY DO THIS if you are running this locally rather than with the hosted service- typically would just be for testing.
 
 ![image](https://github.com/Kennnnn774/EAR-Detection-Tool/assets/76461173/02f89fa3-4c14-48f8-ae2e-c611187168a3)
 
-Finally, change the url in 'scripts/content.js' on line 4 to the localhost url. 
+Finally, change the url in 'scripts/content.js' on line 4 to the localhost url. ONLY DO THIS if you are running it locally rather than with the hosted service- typically would just be for testing. To switch it back to the hosted service, remove the localhost URL and replace it with 'https://ear-extension-backend.onrender.com/scan'
 
 3. Load the Chrome extension into your browser
     - Navigate to chrome://extensions/
